@@ -54,6 +54,10 @@ public class login extends HttpServlet
             {
                 response.sendRedirect("User_Dashboard.jsp");
             }
+            else if(login_name.equals("admin") && login_password.equals("admin1234"))
+                    {
+                      response.sendRedirect("Admin_Dashboard.html");
+                    }
             else{
                 out.println("<center><h2>You are not registered with us</h2></center>");
             }
